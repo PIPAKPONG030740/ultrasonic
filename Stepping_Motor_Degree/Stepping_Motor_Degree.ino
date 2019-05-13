@@ -53,6 +53,10 @@ void loop() {
     sum = sum + x;
     Step_a(speed);
     Serial.println(sum);
+    sum = sum + x;
+    Step_a(speed);
+    Serial.println(sum);
+
   }
   
 }
