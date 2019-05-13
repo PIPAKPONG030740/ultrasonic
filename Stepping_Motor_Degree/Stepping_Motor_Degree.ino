@@ -40,25 +40,21 @@ void loop() {
     Serial.println(sum);
   }
   //   }
-  while (0 >= sum) {
-    sum = sum + x;
+  while (sum >= 0) {
+    sum = sum - x;
     Step_d(speed);
     Serial.println(sum);
-    sum = sum + x;
+    sum = sum - x;
     Step_c(speed);
     Serial.println(sum);
-    sum = sum + x;
+    sum = sum - x;
     Step_b(speed);
     Serial.println(sum);
-    sum = sum + x;
+    sum = sum - x;
     Step_a(speed);
     Serial.println(sum);
-    sum = sum + x;
-    Step_a(speed);
-    Serial.println(sum);
-
   }
-  
+  break;
 }
 
 void Stepleft(int delay_a) { //ฟังกชัน Stepleft มอเตอร์หมุนซ้าย
